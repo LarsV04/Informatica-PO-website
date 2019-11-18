@@ -47,6 +47,11 @@ nav a {
     display: block;
     float: left;
     position: static;
+    font-weight: 600;
+}
+
+nav a:hover {
+letter-spacing: 2px;
 }
 
 /* Lists */
