@@ -9,16 +9,19 @@ body {
     background-color: #202020;
 }
 
+/* navbar */
 nav {
-    position: absolute;
+    position: fixed;
     width: 1vw;
     background: #8000FF;
-    height: auto;
+    height: 5.5vh;
     min-height: 3vh;
     left: 0px;
     top: 0px;
     margin: 0px;
     transition: all 0.3s;
+    text-align: center;
+    border-radius: 0vh 0vh 2vh 0vh;
 }
 
 nav:hover {
@@ -26,9 +29,27 @@ nav:hover {
 }
 
 nav.extend {
-    width: 80vw;
+    width: 50vw;
 }
 
+nav ul {
+    padding-right: 1vw;
+    padding-left: 2vw;
+    overflow: hidden;
+}
+
+nav a {
+    float: none;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    white-space: normal;
+    display: block;
+    float: left;
+    position: static;
+}
+
+/* Lists */
 ul {
     list-style: none;
 }
@@ -50,6 +71,7 @@ a:hover {
     color: #FF3030;
 }
 
+/* Footer */
 footer {
     background-color: #202020;
     padding-top: 4vh;
@@ -61,4 +83,8 @@ footer {
 footer h2 {
     color: #FFFFFF;
     padding-bottom: 0.5vh;
+}
+
+footer a {
+
 }
