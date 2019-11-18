@@ -1,7 +1,36 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-size: 1.5vh;
 }
 
 li {
     list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: italic;
+    transition: all 0.5s;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    color: #FF3030;
+}
+
+footer {
+    background-color: #202020;
+    padding: 40px;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    padding-bottom: 0.5vh;
 }
