@@ -15,13 +15,12 @@ nav {
     width: 1vw;
     background: #8000FF;
     height: 5.5vh;
-    min-height: 3vh;
     left: 0px;
     top: 0px;
     margin: 0px;
-    transition: all 0.3s;
     text-align: center;
     border-radius: 0vh 0vh 2vh 0vh;
+    transition: all 0.3s;
 }
 
 nav:hover {
@@ -30,6 +29,16 @@ nav:hover {
 
 nav.extend {
     width: 50vw;
+}
+
+nav .NavtextWrap {
+    width: 1vw;
+    transition-delay: 0.1s;
+}
+
+nav.extend .NavtextWrap {
+    width: 50vw;
+    height: 5.5vh;
 }
 
 nav ul {
@@ -52,6 +61,18 @@ nav a {
 
 nav a:hover {
 letter-spacing: 2px;
+}
+
+nav.extend ul a {
+    color: #FFF;
+}
+
+nav ul a {
+    color: #0000;
+}
+
+nav.extend ul a:hover {
+    color: #FF8000;
 }
 
 /* Lists */
