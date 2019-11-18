@@ -63,22 +63,25 @@ nav a:hover {
 letter-spacing: 2px;
 }
 
-nav.extend ul a {
-    color: #FFF;
-}
-
 nav ul a {
     color: #0000;
+}
+
+nav.extend ul a {
+    color: #FFF;
 }
 
 nav.extend ul a:hover {
     color: #FF8000;
 }
+/* End navbar */
+
 
 /* Lists */
 ul {
     list-style: none;
 }
+
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -95,6 +98,14 @@ a:visited {
 a:hover {
     color: #FF8000;
 }
+/* end lists */
+
+/* Header */
+header {
+    color: #FFFFFF;
+    min-height: 1000px;
+}
+/* end header */
 
 /* Footer */
 footer {
@@ -105,10 +116,14 @@ footer {
     width: 80vw;
 }
 
+footer a {
+    font-size: 2vh;
+}
+
 footer h2 {
     color: #FFFFFF;
     padding-bottom: 0.5vh;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
 }
 
 footer ul {
@@ -117,5 +132,31 @@ footer ul {
 }
 
 footer a:hover {
-    font-size: 110%;
+    font-size: 2.5vh;
 }
+
+footer .LinksFooter {
+    float: left;
+    width: 40vw;
+    position: static;
+}
+
+footer .DisclaimerFooter {
+    float: left;
+    width: 40vw;
+}
+
+footer .Copyright {
+    margin: auto;
+    float: left;
+    width: 80vw;
+    color: #FFFFFF;
+    position: static;
+    padding: 1vw;
+}
+
+footer .Copyright h5 {
+    font-size: 2vh;
+    text-align: center;
+}
+/* end footer */
