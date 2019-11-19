@@ -24,7 +24,7 @@ nav {
 }
 
 nav:hover {
-    background-color: #6000FF;
+    background-color: #4000FF;
 }
 
 nav.extend {
@@ -34,6 +34,8 @@ nav.extend {
 nav .NavtextWrap {
     width: 1vw;
     transition-delay: 0.1s;
+    height: 5.5vh;
+    overflow: hidden;
 }
 
 nav.extend .NavtextWrap {
@@ -52,7 +54,7 @@ nav a {
     padding-left: 1vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    white-space: normal;
+    white-space: nowrap;
     display: block;
     float: left;
     position: static;
@@ -103,7 +105,27 @@ a:hover {
 /* Header */
 header {
     color: #FFFFFF;
-    min-height: 100vh;
+    margin: auto;
+    width: 80vw;
+    padding-top: 8vh;
+}
+
+header h1 {
+    font-size: 6vh;
+}
+
+header h2 {
+    font-size: 3vh;
+}
+
+/* homepage */
+header#mainheader {
+    height: 100vh;
+}
+
+/* subpages */
+header#subpage {
+    height: 30vh;
 }
 /* end header */
 
@@ -132,7 +154,7 @@ footer ul {
 }
 
 footer a:hover {
-    font-size: 2.5vh;
+    font-size: 2.1vh;
 }
 
 footer .LinksFooter {
@@ -160,3 +182,19 @@ footer .Copyright h5 {
     text-align: center;
 }
 /* end footer */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    background: #202020;
+    width: 0.3vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8000FF;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4000FF;
+}
+/* end scrollbar */
