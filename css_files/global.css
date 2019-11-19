@@ -166,6 +166,10 @@ header#botwPage h1 {
 /* end sections */
 
 /* logboek */
+.logboek h3 {
+    padding-bottom: 1vh;
+}
+
 .logboek table {
     border: 1px solid black;
     border-radius: 1vw;
