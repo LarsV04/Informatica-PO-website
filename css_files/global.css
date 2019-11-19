@@ -134,6 +134,7 @@ header#subpage {
     height: 30vh;
 }
 
+/* game pages */
 header#danganPage h1 {
     color: var(--color1);
 }
@@ -146,6 +147,41 @@ header#botwPage h1 {
     color: var(--color1);
 }
 /* end header */
+
+/* sections */
+.section {
+    margin: auto;
+    background-color: #AAAAAA;
+}
+
+.section .inhoud {
+    margin: auto;
+    width: 80vw;
+    padding: 5vh;
+}
+
+.section h3 {
+    font-size: 3vh;
+}
+/* end sections */
+
+/* logboek */
+.logboek table {
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+
+.logboek table th {
+    width: 15vw;
+    padding: 0.7vh;
+    font-size: 1.7vh;
+}
+
+.logboek tr.tableHead th {
+    font-weight: bolder;
+}
+/* end logboek */
+
 
 /* Footer */
 footer {
