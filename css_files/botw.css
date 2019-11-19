@@ -1,0 +1,9 @@
+:root {
+    --color1: #00FF80;
+    --color2: #00FFFF;
+    --txthover: #505050;
+}
+
+nav.extend ul a {
+    color: #808080;
+}

@@ -1,3 +1,9 @@
+:root {
+    --color1: #8000FF;
+    --color2: #4000FF;
+    --txthover: #00FF80;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vh;
@@ -13,7 +19,7 @@ body {
 nav {
     position: fixed;
     width: 1vw;
-    background: #8000FF;
+    background: var(--color1);
     height: 5.5vh;
     left: 0px;
     top: 0px;
@@ -24,7 +30,7 @@ nav {
 }
 
 nav:hover {
-    background-color: #4000FF;
+    background-color: var(--color2);
 }
 
 nav.extend {
@@ -70,11 +76,11 @@ nav ul a {
 }
 
 nav.extend ul a {
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 nav.extend ul a:hover {
-    color: #00FF80;
+    color: var(--txthover);
 }
 /* End navbar */
 
@@ -98,7 +104,7 @@ a:visited {
 }
 
 a:hover {
-    color: #00FF80;
+    color: var(--txthover);
 }
 /* end lists */
 
@@ -126,6 +132,18 @@ header#mainheader {
 /* subpages */
 header#subpage {
     height: 30vh;
+}
+
+header#danganPage h1 {
+    color: var(--color1);
+}
+
+header#p5Page h1 {
+    color: var(--color1);
+}
+
+header#botwPage h1 {
+    color: var(--color1);
 }
 /* end header */
 
@@ -190,11 +208,11 @@ footer .Copyright h5 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #8000FF;
+    background-color: var(--color1);
     border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #4000FF;
+    background-color: var(--color2);
 }
 /* end scrollbar */
