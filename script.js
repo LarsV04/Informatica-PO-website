@@ -6,3 +6,15 @@ function SetNav() {
 
     document.getElementById("NavPijl").classList.toggle("left")
 }
+
+window.addEventListener('load', () => {
+    var element = document.getElementsByClassName('time');
+    var totalhours = 0
+    for (i = 0; i < element.length; i++) {
+        var text = element[i].innerText || element[i].textContent
+        var numb = text.replace(/[A-z]/g,'');
+        totalhours = totalhours + parseFloat(numb)
+    }
+    var tothourstxt = "<p>Totaal aantal uur: " + totalhours + " uur<p>"
+    document.getElementById("totuur").innerHTML = tothourstxt
+})

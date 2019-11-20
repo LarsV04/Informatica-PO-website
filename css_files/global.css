@@ -165,8 +165,9 @@ header#botwPage h1 {
 
 /* sections */
 .section {
-    margin: auto;
+    margin: 1vw 1vw 1vw 1vw ;
     background-color: #AAAAAA;
+    border-radius: 2vh;
 }
 
 .section .inhoud {
@@ -198,6 +199,12 @@ header#botwPage h1 {
 
 .logboek tr.tableHead th {
     font-weight: bolder;
+}
+
+.logboek p {
+    font-size: 2vh;
+    font-weight: 600;
+    padding-top: 0.7vh;
 }
 /* end logboek */
 
