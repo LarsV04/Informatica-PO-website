@@ -15,6 +15,27 @@ body {
     background-color: #202020;
 }
 
+/* Navpijl */
+div#NavPijl {
+    stroke: var(--txthover);
+    stroke-width: 0.5vh;
+    fill: #0000;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    overflow: visible;
+    top: 1.5vh;
+    width: 75%;
+    height: 75%;
+    left: 0.3vw;
+    position: absolute;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+div#NavPijl.left svg path {
+    transform: rotate(180);
+}
+
 /* navbar */
 nav {
     position: fixed;
@@ -67,7 +88,7 @@ nav a {
     font-weight: 600;
 }
 
-nav a:hover {
+nav ul:hover {
     letter-spacing: 2px;
 }
 
