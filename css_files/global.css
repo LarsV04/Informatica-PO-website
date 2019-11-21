@@ -46,7 +46,7 @@ nav .NavtextWrap {
 }
 
 nav.extend .NavtextWrap {
-    width: 50vw;
+    width: auto;
     height: 5.5vh;
 }
 
