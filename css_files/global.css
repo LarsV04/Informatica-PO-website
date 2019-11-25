@@ -18,7 +18,7 @@ body {
 /* navbar */
 nav {
     position: fixed;
-    width: 1vw;
+    width: 2vw;
     background: var(--color1);
     height: 5.5vh;
     left: 0px;
@@ -35,11 +35,11 @@ nav:hover {
 }
 
 nav.extend {
-    width: 50vw;
+    width: 60vw;
 }
 
 nav .NavtextWrap {
-    width: 1vw;
+    width: 2vw;
     transition-delay: 0.1s;
     height: 5.5vh;
     overflow: hidden;
@@ -68,10 +68,6 @@ nav a {
     font-weight: 600;
 }
 
-nav ul:hover {
-    letter-spacing: 2px;
-}
-
 nav ul a {
     color: #0000;
 }
@@ -82,6 +78,7 @@ nav.extend ul a {
 
 nav.extend ul a:hover {
     color: var(--txthover);
+	letter-spacing: 2px;
 }
 /* End navbar */
 
