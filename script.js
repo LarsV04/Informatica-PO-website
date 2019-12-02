@@ -14,6 +14,9 @@ window.addEventListener('load', () => {
     for (i = 0; i < element.length; i++) {
         totalhours += Number(element[i].innerText.match(/(\d|\.)+/g))
     }
-    var tothourstxt = "<p>Totaal aantal uur: " + totalhours + " uur<p>"
+
+    var totUur = (totalhours + "").split(".")
+    var totMinuten = ("0." + totUur[1]) * 60
+    var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p>"
     document.getElementById("totuur").innerHTML = tothourstxt
 })

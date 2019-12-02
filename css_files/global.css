@@ -81,7 +81,6 @@ nav.extend ul a:hover {
     color: var(--txthover);
 	letter-spacing: 2px;
 }
-/* End navbar */
 
 nav div#NavPijl h2 {
     transition: all 0.5s;
@@ -98,6 +97,8 @@ nav div#NavPijl h2 {
 nav div#NavPijl.left h2 {
     transform: rotate(180deg) translateX(-0.5vw);
 }
+/* End navbar */
+
 
 /* Lists */
 ul {
@@ -121,6 +122,7 @@ li a:hover {
     color: var(--txthover);
 }
 /* end lists */
+
 
 /* Header */
 header {
@@ -162,6 +164,7 @@ header#botwPage h1 {
 }
 /* end header */
 
+
 /* sections */
 .section {
     margin: 1vw 1vw 1vw 1vw ;
@@ -181,6 +184,7 @@ header#botwPage h1 {
 }
 /* end sections */
 
+
 /* Bronnenlijst */
 .inhoud li {
     font-size: 1.8vh;
@@ -195,6 +199,7 @@ header#botwPage h1 {
     color: var(--txthover);
 }
 /* end Bronnenlijst */
+
 
 /* logboek */
 .logboek h3 {
@@ -277,6 +282,7 @@ footer .Copyright h5 {
     text-align: center;
 }
 /* end footer */
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
