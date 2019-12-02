@@ -27,6 +27,7 @@ nav {
     text-align: center;
     border-radius: 0vh 0vh 2vh 0vh;
     transition: all 0.3s;
+    transition-delay: 0.2s;
     user-select: none;
 }
 
@@ -40,7 +41,7 @@ nav.extend {
 
 nav .NavtextWrap {
     width: 2vw;
-    transition-delay: 0.1s;
+    transition-delay: all 0.3s;
     height: 5.5vh;
     overflow: hidden;
 }
