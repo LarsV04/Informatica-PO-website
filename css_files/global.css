@@ -15,6 +15,23 @@ body {
     background-color: #202020;
 }
 
+/* Buttons */
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #0000;
+    background-color: #909090;
+    color: #000;
+    margin: 0.5vh;
+    transition: all 0.3s;
+}
+
+button:hover {
+    color: var(--txthover);
+    background-color: #959595;
+}
+/* end buttons */
+
 /* navbar */
 nav {
     position: fixed;
@@ -84,7 +101,6 @@ nav.extend ul a:hover {
 
 nav div#NavPijl h2 {
     transition: all 0.5s;
-    transition-timing-function: ease;
     color: var(--txthover);
     position: absolute;
     top: 0.95vh;

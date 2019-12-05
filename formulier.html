@@ -29,7 +29,7 @@
 
         <div class="Formulier section">
             <div class="inhoud">
-                <form>
+                <form id="Form">
                     Naam:<br>
                     <input type="text" name="Fullname" value=""><br><br>
                     Leeftijd:<br>
@@ -40,8 +40,11 @@
                     Waarmee kom je naar school:<br>
                     <input type="checkbox" name="" value="Bike"> Met de fiets<br>
                     <input type="checkbox" name="" value="Car"> Met de auto<br>
-                    <input type="checkbox" name="" value="Walk"> Lopend
+                    <input type="checkbox" name="" value="Walk"> Lopend<br>
+                    <input type="checkbox" name="" value="Other"> Anders<br>
                 </form>
+                <button href="mailto:IAmAEmail@gmail.com?subject=I Am a mail?">Verzend</button>
+                <button onclick="ResetForm()">Reset</button>
             </div>
         </div>
 

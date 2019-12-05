@@ -20,3 +20,8 @@ window.addEventListener('load', () => {
     var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p>"
     document.getElementById("totuur").innerHTML = tothourstxt
 })
+
+function ResetForm() {
+    var formhtml = 'Naam:<br>\n<input type="text" name="Fullname" value=""><br><br>\nLeeftijd:<br>\n<input type="number" name="Age" value="0" min="0"><br><br>\n<input type="radio" name="gender" value="male" checked> Man<br>\n<input type="radio" name="gender" value="female"> Vrouw<br>\n<input type="radio" name="gender" value="other"> Anders <br><br>\nWaarmee kom je naar school:<br>\n<input type="checkbox" name="" value="Bike"> Met de fiets<br>\n<input type="checkbox" name="" value="Car"> Met de auto<br>\n<input type="checkbox" name="" value="Walk"> Lopend<br>\n<input type="checkbox" name="" value="Other"> Anders<br>'
+    document.getElementById("Form").innerHTML = formhtml
+}
