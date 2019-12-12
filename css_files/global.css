@@ -11,6 +11,10 @@
     margin: 0px;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     background-color: #202020;
 }
