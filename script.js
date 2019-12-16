@@ -20,14 +20,3 @@ window.addEventListener('load', () => {
     var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p>"
     document.getElementById("totuur").innerHTML = tothourstxt
 })
-
-function SendForm() {
-    var FullName = document.getElementById("Fullname").value
-    var Age = document.getElementById("Age").value
-    console.log(FullName)
-    console.log(Age)
-}
-
-function ResetForm() {
-    document.getElementById("Form").innerHTML = formhtml
-}

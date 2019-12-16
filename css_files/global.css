@@ -20,7 +20,7 @@ body {
 }
 
 /* Buttons */
-button {
+button, .Formbutton{
     padding: 5px;
     border-radius: 5px;
     border-color: #0000;
@@ -30,7 +30,7 @@ button {
     transition: all 0.3s;
 }
 
-button:hover {
+button:hover, .Formbutton:hover {
     color: var(--txthover);
     background-color: #959595;
 }
@@ -286,6 +286,8 @@ footer .LinksFooter {
 footer .DisclaimerFooter {
     float: left;
     width: 40vw;
+    font-size: 1.8vh;
+    color: #FFFFFF;
 }
 
 footer .Copyright {
