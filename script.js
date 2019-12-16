@@ -16,7 +16,11 @@ window.addEventListener('load', () => {
     }
 
     var totUur = (totalhours + "").split(".")
-    var totMinuten = ("0." + totUur[1]) * 60
+    if(totUur[1] === undefined) {
+        var totMinuten = 0
+    } else {
+        var totMinuten = ("0." + totUur[1]) * 60
+    }
     var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p>"
     document.getElementById("totuur").innerHTML = tothourstxt
 })

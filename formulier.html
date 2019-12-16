@@ -31,9 +31,9 @@
             <div class="inhoud">
                 <form id="Form" action="mailto:150905@leerling.canisiuscollege.nl" method="post" enctype="text/plain">  
                     Naam:<br>
-                    <input type="text" id="Fullname" name="name"><br><br>
+                    <input type="text" id="Fullname" name="name" required><br><br>
                     Leeftijd:<br>
-                    <input type="number" id="Age" name="age" min="0"><br><br>
+                    <input type="number" id="Age" name="age" min="0" required><br><br>
                     <input type="radio" class="gender" name="gender" value="male" checked> Man<br>
                     <input type="radio" class="gender" name="gender" value="female"> Vrouw<br>
                     <input type="radio" class="gender" name="gender" value="other"> Anders <br><br>
@@ -42,7 +42,7 @@
                     <input type="checkbox" class="ToSchool" name="Naar school" value="Car"> Met de auto<br>
                     <input type="checkbox" class="ToSchool" name="Naar school" value="Walk"> Lopend<br>
                     <input type="checkbox" class="ToSchool" name="Naar school" value="Other"> Anders<br><br>
-    
+
                     <input type="submit" value="Send" class="Formbutton"/>
                     <input type="reset" name="reset" value="Reset" class="Formbutton"/>
                 </form>

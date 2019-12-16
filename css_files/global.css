@@ -194,9 +194,10 @@ header#botwPage h1 {
 
 .section .inhoud {
     margin: auto;
-    width: 80vw;
+    width: 70vw;
     padding: 5vh;
     font-size: 2vh;
+    overflow: auto;
 }
 
 .section h3 {
@@ -205,6 +206,19 @@ header#botwPage h1 {
 
 .section img {
     float: right;
+    width: auto;
+    height: 40vh;
+    margin-left: 1vw;
+    border-inline: none;
+}
+
+.section a {
+    font-size: 2vh;
+    color: var(--color1);
+}
+
+.section a:hover {
+    color: var(--txthover);
 }
 /* end sections */
 
