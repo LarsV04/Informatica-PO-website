@@ -196,11 +196,15 @@ header#botwPage h1 {
     margin: auto;
     width: 80vw;
     padding: 5vh;
-    font-size: 1.8vh;
+    font-size: 2vh;
 }
 
 .section h3 {
     font-size: 3vh;
+}
+
+.section img {
+    float: right;
 }
 /* end sections */
 
