@@ -161,8 +161,13 @@ header h2 {
 }
 
 /* homepage */
-header#mainheader {
+header#mainheader.extended {
     height: 100vh;
+}
+
+header#mainheader {
+    height: 30vh;
+    transition: all 0.6s;
 }
 
 /* subpages */
@@ -187,9 +192,10 @@ header#botwPage h1 {
 
 /* sections */
 .section {
-    margin: 1vw 1vw 1vw 1vw ;
     background-color: #AAAAAA;
     border-radius: 2vh;
+    width: 85vw;
+    margin: 4vh auto;
 }
 
 .section .inhoud {
@@ -207,7 +213,7 @@ header#botwPage h1 {
 .section img {
     float: right;
     width: auto;
-    height: 40vh;
+    height: 30vh;
     margin-left: 1vw;
     border-inline: none;
 }

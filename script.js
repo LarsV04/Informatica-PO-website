@@ -24,3 +24,13 @@ window.addEventListener('load', () => {
     var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p>"
     document.getElementById("totuur").innerHTML = tothourstxt
 })
+
+window.addEventListener('scroll', () => {
+    var Scrollofset = pageYOffset;
+
+    if (Scrollofset == 0){
+        document.getElementById("mainheader").classList.add('extended');
+    } else if (Scrollofset >= 1) {
+        document.getElementById("mainheader").classList.remove('extended');
+    }
+})
