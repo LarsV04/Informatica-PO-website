@@ -206,6 +206,21 @@ header#botwPage h1 {
     overflow: auto;
 }
 
+.section .inhoud ol li {
+    font-size: 2.3vh;
+    font-weight: 600;
+}
+
+.section .inhoud ol li a {
+    font-size: 2.3vh;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.section .inhoud ol li a:hover {
+    letter-spacing: 3px;
+}
+
 .section .inhoud #weerbericht {
     font-size: 2vh;
 }
@@ -217,9 +232,16 @@ header#botwPage h1 {
 .section img {
     float: right;
     width: auto;
-    height: 30vh;
     margin-left: 1vw;
     border-inline: none;
+}
+
+#p5img1 {
+    height: 30vh;
+}
+
+#BOTWimg1 {
+    height: 20vh;
 }
 
 .section a {

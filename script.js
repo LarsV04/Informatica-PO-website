@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
     } else {
         var totMinuten = ("0." + totUur[1]) * 60
     }
-    var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p>"
+    var tothourstxt = "<p>Tijd besteed: " + totUur[0] + " uur en " + totMinuten + " minuten<p> (gemaakt met javascript: lijn 20-36)"
     document.getElementById("totuur").innerHTML = tothourstxt
 })
 
