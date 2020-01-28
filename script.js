@@ -1,10 +1,20 @@
+var xhr = new XMLHttpRequest;
+
+xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var WeerData = JSON.parse(this.responseText);
+        document.getElementById("weerbericht").innerHTML = "Stationnaam: " + WeerData.actual.stationmeasurements[4].stationname + "<br>Temperatuur: Het is " + WeerData.actual.stationmeasurements[4].temperature + " graden celcius<br>Wind: De richting is " + WeerData.actual.stationmeasurements[4].winddirection  + " met windsnelheid " + WeerData.actual.stationmeasurements[4].windspeed + "<br>Regen: " + WeerData.actual.stationmeasurements[4].rainFallLastHour + "mm het laatste uur en " + WeerData.actual.stationmeasurements[4].rainFallLast24Hour + "mm laatste 24 uur<br>Samenvatting: " + WeerData.actual.stationmeasurements[4].weatherdescription;
+    }
+}
+
+xhr.open("GET", "https://data.buienradar.nl/2.0/feed/json");
+xhr.send();
+
 var navright = true
 
 function SetNav() {
     document.getElementById("navbar").classList.toggle("extend")
     document.getElementById("NavPijl").classList.toggle("left")
-    var formhtml = document.getElementById("Form").innerHTML
-    globalThis(formhtml)
 }
 
 window.addEventListener('load', () => {

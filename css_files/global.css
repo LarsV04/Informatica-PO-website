@@ -206,6 +206,10 @@ header#botwPage h1 {
     overflow: auto;
 }
 
+.section .inhoud #weerbericht {
+    font-size: 2vh;
+}
+
 .section h3 {
     font-size: 3vh;
 }
