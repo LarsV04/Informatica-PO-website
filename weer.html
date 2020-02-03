@@ -5,23 +5,24 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css_files/global.css">
         <script src="./script.js" type="text/javascript"></script>
+
+        <script>
+            var xhr = new XMLHttpRequest;
+
+            xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var WeerData = JSON.parse(this.responseText);
+                document.getElementById("weerbericht").innerHTML = "Stationnaam: " + WeerData.actual.stationmeasurements[4].stationname + "<br>Temperatuur: Het is " + WeerData.actual.stationmeasurements[4].temperature + " graden celcius<br>Wind: De richting is " + WeerData.actual.stationmeasurements[4].winddirection  + " met een windsnelheid van" + WeerData.actual.stationmeasurements[4].windspeed + "<br>Regen: " + WeerData.actual.stationmeasurements[4].rainFallLastHour + "mm het laatste uur en " + WeerData.actual.stationmeasurements[4].rainFallLast24Hour + "mm laatste 24 uur<br>Samenvatting: " + WeerData.actual.stationmeasurements[4].weatherdescription;
+                }
+            }
+
+            xhr.open("GET", "https://data.buienradar.nl/2.0/feed/json");
+            xhr.send();
+        </script>
     </head>
 
     <body>
-        <nav id="navbar" onclick="SetNav()">
-            <div class="NavtextWrap">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./p5.html">Persona 5</a></li>
-                    <li><a href="./dangan.html">Danganronpa: Trigger Happy Havoc</a></li>
-                    <li><a href="./botw.html">The legend of Zelda: Breath of the Wild</a></li>
-                </ul>
-            </div>
-
-            <div id="NavPijl">
-                <h2>></h2>
-            </div>
-        </nav>
+        <nav id="navbar" onclick="SetNav()"></nav>
 
         <header id="subpage">
             <h1>Het weer</h1>
@@ -30,34 +31,10 @@
         <div class="section">
             <div class="inhoud">
                 <h3>Het weerbericht</h3>
-                <div id="weerbericht"></div>
+                <div id="weerbericht"></div><br>
             </div>
         </div>
 
-        <footer>
-            <div class="LinksFooter">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./p5.html">Persona 5</a></li>
-                    <li><a href="./dangan.html">Danganronpa: Trigger Happy Havoc</a></li>
-                    <li><a href="./botw.html">The legend of Zelda: Breath of the Wild</a></li>
-                    <li><a href="./weer.html">Het weer</a></li>
-                    <li><a href="./bronnen.html">Bronnen en logboek</a></li>
-                    <li><a href="./formulier.html">Formulier</a></li>
-                    <li><a href="https://google.com">Ik wil van deze site weg, breng me naar google</a></li>
-                </ul>
-            </div>
-
-            <div class="DisclaimerFooter">
-                <h2>Disclaimer</h2>
-                Alles op deze website is mijn mening, dus als je het ergens niet mee eens bent ga dan maar niet bij mij klagen.
-                Als je het toch doet verspil je alleen maar mijn en je eigen tijd en ik ga het toch niet aanpassen.
-            </div>
-
-            <div class="Copyright">
-                <h5>©LarsV</h5>
-            </div>
-        </footer>
+        <footer id="footer"></footer>
     </body>
 </html>
