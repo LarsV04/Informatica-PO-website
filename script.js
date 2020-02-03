@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
     document.getElementById("navbar").innerHTML = '<div class="NavtextWrap"><ul><li><a href="./index.html">Home</a></li><li><a href="./p5.html">Persona 5</a></li><li><a href="./dangan.html">Danganronpa: Trigger Happy Havoc</a></li><li><a href="./botw.html">The legend of Zelda: Breath of the Wild</a></li></ul></div><div id="NavPijl"><h2>></h2></div>'
     //hetzelfde maar met de navbar
 
-
     try {
         var element = document.getElementsByClassName('time');
         if(element.length == 0) return;
